@@ -12,7 +12,7 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 # Database Configuration
-DATABASE_URL = "postgresql://postgres:root@localhost:5432/login"
+DATABASE_URL = "postgres://data_base_9hzz_user:emYs9CvyMX6leqxwpmj4zT7irTSfrJ3e@dpg-cknr2561101c7390hba0-a.oregon-postgres.render.com/data_base_9hzz"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
