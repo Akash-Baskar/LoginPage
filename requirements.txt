@@ -1,0 +1,9 @@
+uvicorn[standard]
+fastapi
+Jinja2
+fastapi[all] 
+databases[postgresql] 
+passlib 
+sqlalchemy 
+uvicorn 
+jinja2

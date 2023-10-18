@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application</title>
+</head>
+<body>
+    <div id="content">
+        <!-- Content from different pages will be loaded here -->
+    </div>
+</body>
+<script>
+    function loadPage(pageName) {
+        fetch(pageName)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('content').innerHTML = html;
+            });
+    }
+
+    // Initial page load (e.g., load the login page)
+    loadPage('/index.html');
+</script>
+</html>
