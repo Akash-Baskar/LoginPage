@@ -7,5 +7,6 @@ passlib
 sqlalchemy 
 uvicorn 
 jinja2
-psycopg2
+psycopg2-binary
+
 
